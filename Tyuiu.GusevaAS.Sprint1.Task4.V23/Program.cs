@@ -1,6 +1,6 @@
-﻿using Tyuiu.GusevaAS.Sprint1.Task3.V17.Lib;
+﻿using Tyuiu.GusevaAS.Sprint1.Task4.V23.Lib;
 
-namespace Tyuiu.GusevaAS.Sprint1.Task3.V17
+namespace Tyuiu.GusevaAS.Sprint1.Task4.V23
 {
     internal class Program
     {
@@ -10,31 +10,31 @@ namespace Tyuiu.GusevaAS.Sprint1.Task3.V17
             Console.Title = "Спринт #1 | Выполнила: Гусева А. С. | РППб-26-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
-            Console.WriteLine("* Тема: Операторы составного присваивания                                 *");
-            Console.WriteLine("* Задание #3                                                              *");
-            Console.WriteLine("* Вариант #17                                                             *");
+            Console.WriteLine("* Тема: Class Math                                                        *");
+            Console.WriteLine("* Задание #4                                                              *");
+            Console.WriteLine("* Вариант #23                                                             *");
             Console.WriteLine("* Выполнила: Гусева Алиса Степановна | РППб-26-1                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая определяет, есть ли среди первых трех цифр  *");
-            Console.WriteLine("* из дробной части заданного вещественного числа цифра 0                  *");
+            Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
+            Console.WriteLine("* вычисляет результат по формуле и печатает его на экране                 *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.Write("Введите вещественное число: ");
+            Console.Write("Введите значение x: ");
             double x = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Введите значение y: ");
+            double y = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            if (ds.ZeroCheck(x))
-                Console.WriteLine("Среди первых трёх цифр дробной части есть цифра 0");
-            else
-                Console.WriteLine("Среди первых трёх цифр дробной части нет цифры 0");
+            Console.WriteLine(ds.Calculate(x, y));
             Console.ReadLine();
         }
     }
-}
+} 
