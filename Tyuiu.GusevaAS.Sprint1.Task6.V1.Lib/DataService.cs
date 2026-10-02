@@ -7,7 +7,7 @@ namespace Tyuiu.GusevaAS.Sprint1.Task6.V1.Lib
         public string SymbolCode(string value)
         {
             char symbol = value[0];
-            return $"Символ: {symbol} Код: {(int)symbol}";
+            return "{(int)symbol}";
         }
     }
 }
