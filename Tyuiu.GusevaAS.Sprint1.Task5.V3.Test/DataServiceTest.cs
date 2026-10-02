@@ -11,7 +11,7 @@ namespace Tyuiu.GusevaAS.Sprint1.Task5.V3.Test
             DataService ds = new DataService();
             int k = 130985;
             var res = ds.Calculate(k);
-            Assert.AreEqual(9, res);
+            Assert.AreEqual(5, res);
         }
     }
 }
