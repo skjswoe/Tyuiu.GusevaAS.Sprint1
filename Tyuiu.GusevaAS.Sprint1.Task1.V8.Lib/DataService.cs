@@ -7,7 +7,7 @@ namespace Tyuiu.GusevaAS.Sprint1.Task1.V8.Lib
         public double Calculate(double a, double x)
         {
             double result = (x * Math.PI) / a;
-            return result;
+            return Math.Round(result, 2);
         }
     }
 }
