@@ -9,9 +9,9 @@ namespace Tyuiu.GusevaAS.Sprint1.Task5.V3.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            int k = 230598;
+            int k = 130985;
             var res = ds.Calculate(k);
-            Assert.AreEqual(5, res);
+            Assert.AreEqual(9, res);
         }
     }
 }
